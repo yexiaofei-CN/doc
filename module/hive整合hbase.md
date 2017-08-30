@@ -3,10 +3,10 @@
 ### hbase得安装
 - [查看hbase安装](hbase.md) 
 
-###hive得安装
+### hive得安装
 - [查看hive安装](hive.md)
 
-###hive多用户模式安装
+### hive多用户模式安装
 - [查看hive多用户模式安装](hive多用户模式.md)
 
 - 看完前三个在看下面得整合就都搞定了
