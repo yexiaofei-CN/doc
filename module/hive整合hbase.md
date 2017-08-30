@@ -1,10 +1,13 @@
 ### hive整合hbase
 
-- hbase安装 http://blog.csdn.net/qq_33127597/article/details/76685928
+### hbase得安装
+- [查看hbase安装](hbase.md) 
 
-- hive 安装 http://blog.csdn.net/qq_33127597/article/details/76210417
+###hive得安装
+- [查看hive安装](hive.md)
 
-- hive多用户模式安装（服务端 客户端）一般公司都这样装 http://blog.csdn.net/qq_33127597/article/details/77611577
+###hive多用户模式安装
+- [查看hive多用户模式安装](hive多用户模式.md)
 
 - 看完前三个在看下面得整合就都搞定了
 

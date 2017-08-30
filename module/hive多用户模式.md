@@ -2,7 +2,8 @@
 
 - hive多用户模式分开服务端和客户端
 
-- hive单用户模式参考http://blog.csdn.net/qq_33127597/article/details/76210417
+###hive得安装
+- [查看hive单用户安装](hive.md)
 
 - 服务端配置如下
 ```
