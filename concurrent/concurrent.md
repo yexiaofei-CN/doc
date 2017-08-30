@@ -9,6 +9,8 @@
 ```aidl
   举例：当线程t1开始运行得时候，会把count值从内存中读到t1线程得工作区，在运行过程中直接使用这个copy，不会每次去读取堆内存
   ，这样当主线程修改count值之后，t1线程感知不到，所以不会停止运行
+  可以阅读这篇文章进行更深入的理解
+  http://www.cnblogs.com/nexiyi/p/java_memory_model_and_thread.html
   public class T {
       /*volatile*/ boolean running = true; //对比一下有无volatile的情况下，整个程序运行结果的区别
   
