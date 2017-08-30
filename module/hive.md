@@ -72,7 +72,7 @@ org.datanucleus.exceptions.NucleusUserException: Could notcreate "increment"/"ta
 原来设置的是STATEMENT，修改为MIXED
 修改方法，在/etc/my.cnf文件中加上binlog_format=MIXED
 然后重启mysql数据库
-问题解决
+问题解决a
 9、验证Hive配置是否有误，进入Hive的shell新建表,在MySQL的Hive数据库中可以看到相应的元数据库信息。
 1)在Hive上建立数据表
 hive>CREATE TABLE xp(id INT,name string) ROW FORMAT DELIMITED FIELDS TERMINATED BY'\t';
