@@ -1,5 +1,6 @@
-- java内存模型
-![内存图](https://github.com/yexiaofei123/doc/tree/yxf/img/memory.png "内存模型")
+## java内存模型
+
+![内存图](https://github.com/yexiaofei123/doc/tree/yxf/img/memory.png "内存图")
 - voaltile 与 synchronized
 
 ```text
