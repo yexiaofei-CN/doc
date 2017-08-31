@@ -58,27 +58,39 @@ ArrayList 想想排队插队买票。 Linkedlist想想锁链。
 都是大白话。	
 ```
 
-- HashMap&LinkedHashMap&TreeMap&HashTable&ConcurrentHashMap&ConcurrentSkipListMap
-- 参考文献 http://www.cnblogs.com/acm-bingzi/p/javaMap.html  
-```html
+- HashMap
+- 参考文献 http://www.cnblogs.com/acm-bingzi/p/javaMap.html   http://blog.csdn.net/fujiakai/article/details/51585767
+```text
 HashMap:
-    http://blog.csdn.net/fujiakai/article/details/51585767
     HashMap是无序得,是根据键得hashcode值存储数据，底层是哈希表，根据键获取它得值，具有很快得访问速度（哈希底层没看过呢）,
 最多允许一条记录得键为null,允许多个键得值为null，HashMap不支持线程同步(任一时刻可以有有多个线程同时写HashMap)，可能会导致
 数据不一致，同步得话可以调用Collections工具类中得synchonized方法使HashMap具有同步得能力或者ConcurrentHashMap    
 ```
 - LinkedHashMap
+- 参考文献 http://blog.csdn.net/ns_code/article/details/37867985
 ```text
-保存了记录得插入顺序，先插入得先遍历出来，遍历会比HashMap慢，底层实现是哈希和链表
-    http://blog.csdn.net/ns_code/article/details/37867985
+    保存了记录得插入顺序，先插入得先遍历出来，遍历会比HashMap慢，底层实现是哈希和链表
+    
 ```
 - TreeMap
+- 参考文献 http://blog.csdn.net/a616413086/article/details/52586006
 ```text
-  默认是按升序排，也可以指定排序的比较器。遍历的时候按升序遍历  底层实现是红黑树
-  http://blog.csdn.net/a616413086/article/details/52586006
+    默认是按升序排，也可以指定排序的比较器。遍历的时候按升序遍历  底层实现是红黑树
+  
 ```
-
 - HashTable
+- 源码剖析：http://blog.csdn.net/ns_code/article/details/36191279 
 ```text
-
+    底层实现也是哈希表，是线程安全得
+```
+- ConcurrentHashMap&
+```text
+    ConcurrentHashMap 锁的粒度变小了 HashTable锁的整个hash表,ConcurrentHashMap--锁桶,默认分为16个桶,可同时16个线程写入,读取不需要上锁。
+    
+```
+- ConcurrentSkipListMap
+- 参考文献   http://blog.csdn.net/sunxianghuang/article/details/52221913  http://www.educity.cn/java/498061.html
+           
+```text
+   ConcurrentSkipListMap 跳帽
 ```
