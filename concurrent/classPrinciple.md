@@ -92,5 +92,5 @@ HashMap:
 - 参考文献   http://blog.csdn.net/sunxianghuang/article/details/52221913  http://www.educity.cn/java/498061.html
            
 ```text
-   ConcurrentSkipListMap 跳帽
+   ConcurrentSkipListMap 跳帽 高并发且排序
 ```

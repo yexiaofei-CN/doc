@@ -101,3 +101,30 @@ public class T {
 ```text
 重入锁 必须手动释放锁 设置公平锁
 ```
+- 队列
+```text
+ConcurrentLinkedQueue  非阻塞高并发队列 
+LinkedBlockingQueue 无界队列 是链表实现得阻塞队列，在链表一头加入元素，如果队列满，就会阻塞，另一头取出元素，如果队列空，就会等待
+ArrayBlockingQueue  有界队列 比如设置10个队列 当put进去10个 在put时就会阻塞
+TransferQueue      直接交给消费者消费
+SynchronusQueue    容量为0  生产了要马上消费
+DelayQueue执行定时任务  在这个任务中的元素默认多长时间被消费者消费
+```
+
+- 线程
+```text
+http://www.cnblogs.com/zhujiabin/p/5404771.html
+newCachedThreadPool 缓存的线程池 当来了2个任务就启动2个线程  当第三个任务来了时候前面线程执行完成后就不在启动第三个线程来执行。当前面的没
+                     有执行完成就启动第三个线程执行
+newSingleThreadExecutor 一个线程池
+newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。
+newScheduledThreadPool 创建一个定长线程池，支持定时及周期性任务执行。
+ThreadPoolExecutor( int maximumPoolSize, long keepAliveTime, TimeUnit unit, BlockingQueue<Runnable> workQueue,RejectedExecutionHandler handler)                                                                                                                                                                                                                       
+    corePoolSize 核心线程池大小
+    maximumPoolSize 线程池最大容量大小
+    keepAliveTime 线程池空闲时，线程存活的时间
+    TimeUnit 时间单位
+    ThreadFactory 线程工厂
+    BlockingQueue任务队列
+    RejectedExecutionHandler 线程拒绝策略    
+```
