@@ -57,3 +57,28 @@ LinkdList：
 ArrayList 想想排队插队买票。 Linkedlist想想锁链。
 都是大白话。	
 ```
+
+- HashMap&LinkedHashMap&TreeMap&HashTable&ConcurrentHashMap&ConcurrentSkipListMap
+- 参考文献 http://www.cnblogs.com/acm-bingzi/p/javaMap.html  
+```html
+HashMap:
+    http://blog.csdn.net/fujiakai/article/details/51585767
+    HashMap是无序得,是根据键得hashcode值存储数据，底层是哈希表，根据键获取它得值，具有很快得访问速度（哈希底层没看过呢）,
+最多允许一条记录得键为null,允许多个键得值为null，HashMap不支持线程同步(任一时刻可以有有多个线程同时写HashMap)，可能会导致
+数据不一致，同步得话可以调用Collections工具类中得synchonized方法使HashMap具有同步得能力或者ConcurrentHashMap    
+```
+- LinkedHashMap
+```text
+保存了记录得插入顺序，先插入得先遍历出来，遍历会比HashMap慢，底层实现是哈希和链表
+    http://blog.csdn.net/ns_code/article/details/37867985
+```
+- TreeMap
+```text
+  默认是按升序排，也可以指定排序的比较器。遍历的时候按升序遍历  底层实现是红黑树
+  http://blog.csdn.net/a616413086/article/details/52586006
+```
+
+- HashTable
+```text
+
+```
